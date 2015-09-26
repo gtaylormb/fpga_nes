@@ -34,7 +34,8 @@ module apu_mixer
   input  wire [3:0] pulse1_in,    // pulse 1 channel input
   input  wire [3:0] triangle_in,  // triangle channel input
   input  wire [3:0] noise_in,     // noise channel input
-  output wire       audio_out     // mixed audio output
+  output wire       audio_out,     // mixed audio output
+  output wire [5:0] dac_audio_out
 );
 
 wire [3:0] pulse0;
@@ -200,6 +201,8 @@ assign triangle = (mute_in[2]) ? 4'h0 : triangle_in;
 assign noise    = (mute_in[3]) ? 4'h0 : noise_in;
 
 assign audio_out = mixed_out > q_pwm_cnt;
+
+assign dac_audio_out = mixed_out;
 
 endmodule
 

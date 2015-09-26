@@ -21,3 +21,14 @@ In addition, this project includes a C++ Windows application called NesDbg, whic
 
 1. [ISE 14.1 WebPack](http://www.xilinx.com/support/download/index.htm) (free)
 2. [Visual Studio 2010 Express](http://www.microsoft.com/visualstudio/en-us/products/2010-editions/visual-cpp-express) (free)
+
+** ZYBO Board Port:**
+
+This is under development by Greg Taylor. Some changes to the hardware setup:
+1. [ZYBO Zynq-7000 FPGA board](https://www.digilentinc.com/Products/Detail.cfm?NavPath=2,400,1198&Prod=ZYBO) instead of Nexys 3. ($125 / $189)
+2. [PmodUSBUART](https://digilentinc.com/Products/Detail.cfm?NavPath=2,401,928&Prod=PMOD-USB-UART) for UART connection to ZYBO FPGA.  ($22)
+3. You do not need the PmodAMP1 as the ZYBO has a built in DAC.
+
+Changes to development setup:
+1. [Vivado 2015.1 WebPack](http://www.xilinx.com/support/download.html) (free) instead of ISE.
+

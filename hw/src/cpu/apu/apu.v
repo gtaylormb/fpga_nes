@@ -34,6 +34,7 @@ module apu
   input  wire [ 7:0] d_in,      // data input bus
   input  wire        r_nw_in,   // read/write select
   output wire        audio_out, // pwm audio output
+  output wire [ 5:0] dac_audio_out, 
   output wire [ 7:0] d_out      // data output bus
 );
 
@@ -221,7 +222,8 @@ apu_mixer apu_mixer_blk(
   .pulse1_in(pulse1_out),
   .triangle_in(triangle_out),
   .noise_in(noise_out),
-  .audio_out(audio_out)
+  .audio_out(audio_out),
+  .dac_audio_out(dac_audio_out)
 );
 
 assign d_out = (r_nw_in && (a_in == STATUS_MMR_ADDR)) ?

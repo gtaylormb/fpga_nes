@@ -25,6 +25,12 @@
 *  Top level module for an fpga-based Nintendo Entertainment System emulator.
 ***************************************************************************************************/
 
+/*
+ * Exposes the multi-bit audio data for output to a DAC.
+ * Can also pass in from build tool
+ */
+//`define USE_DAC_AUDIO
+
 module nes_top
 (
   input  wire       CLK_100MHZ,        // 100MHz system clock signal
@@ -42,7 +48,12 @@ module nes_top
   output wire [1:0] VGA_BLUE,          // vga blue signal
   output wire       NES_JOYPAD_CLK,    // joypad output clk signal
   output wire       NES_JOYPAD_LATCH,  // joypad output latch signal
+`ifdef USE_DAC_AUDIO      
+  output wire       AUDIO,             // pwm output audio channel
+  output wire [5:0] DAC_AUDIO
+`else
   output wire       AUDIO              // pwm output audio channel
+`endif  
 );
 
 //
@@ -88,6 +99,7 @@ rp2a03 rp2a03_blk(
   .jp_latch(NES_JOYPAD_LATCH),
   .mute_in(SW),
   .audio_out(AUDIO),
+  .dac_audio_out(DAC_AUDIO),
   .dbgreg_sel_in(rp2a03_dbgreg_sel),
   .dbgreg_d_in(rp2a03_dbgreg_din),
   .dbgreg_wr_in(rp2a03_dbgreg_wr),

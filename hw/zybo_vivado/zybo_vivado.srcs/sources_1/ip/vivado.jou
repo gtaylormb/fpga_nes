@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Fri Sep 25 23:29:01 2015
+# Process ID: 13773
+# Log file: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/vivado.log
+# Journal file: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.xpr
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+project_reset
+reset_project

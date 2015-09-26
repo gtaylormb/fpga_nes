@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Fri Sep 25 23:29:01 2015
+# Process ID: 13773
+# Log file: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/vivado.log
+# Journal file: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.1/data/ip'.
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_div.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_div.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_envelope_generator.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_envelope_generator.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_frame_counter.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_frame_counter.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_length_counter.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_length_counter.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_mixer.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_mixer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_noise.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_noise.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_pulse.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_pulse.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_triangle.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/apu/apu_triangle.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/block_ram/block_ram.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/block_ram/block_ram.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cart/cart.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cart/cart.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/hci/hci.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/hci/hci.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/jp.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/jp.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/nes_top.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/nes_top.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_bg.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_bg.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_ri.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_ri.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_spr.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_spr.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_vga.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/ppu/ppu_vga.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/rp2a03.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/rp2a03.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/sprdma.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/sprdma.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v:1]
+INFO: [HDL 9-1065] Parsing verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart_baud_clk.v" included at line 29. [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v:29]
+INFO: [HDL 9-1065] Parsing verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart_rx.v" included at line 30. [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v:30]
+INFO: [HDL 9-1065] Parsing verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart_tx.v" included at line 31. [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v:31]
+INFO: [HDL 9-1065] Parsing verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/../fifo/fifo.v" included at line 33. [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/uart/uart.v:33]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/vga_sync/vga_sync.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cmn/vga_sync/vga_sync.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/vram.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/vram.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/wram.v" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/wram.v:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/cdc_syncfifo.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/cdc_syncfifo.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/clk_div.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/clk_div.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/cpu.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/cpu/cpu.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/dp_ram2.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/dp_ram2.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/i2s.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/i2s.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/nes_zybo_wrapper.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/nes_zybo_wrapper.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/rctl.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/rctl.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/synchronizer.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/synchronizer.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/wctl.sv" into library work [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/fifo/src/wctl.sv:1]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'processing_system7_0'...
+[Fri Sep 25 23:29:32 2015] Launched mmcm_synth_1, processing_system7_0_synth_1...
+Run output will be captured here:
+mmcm_synth_1: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/mmcm_synth_1/runme.log
+processing_system7_0_synth_1: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/processing_system7_0_synth_1/runme.log
+[Fri Sep 25 23:29:32 2015] Launched synth_1...
+Run output will be captured here: /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 5795.414 ; gain = 43.469 ; free physical = 3640 ; free virtual = 10170
+project_reset
+invalid command name "project_reset"
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 25 23:31:27 2015...

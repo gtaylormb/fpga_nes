@@ -50,6 +50,7 @@ module rp2a03
   // Audio signals.
   input  wire [ 3:0] mute_in,        // disable autio channels
   output wire        audio_out,      // pwm audio output
+  output wire [ 5:0] dac_audio_out,   
 
   // HCI interface.
   input  wire [ 3:0] dbgreg_sel_in,  // dbg reg select
@@ -99,6 +100,7 @@ apu apu_blk(
   .d_in(cpu_dout),
   .r_nw_in(cpu_r_nw),
   .audio_out(audio_out),
+  .dac_audio_out(dac_audio_out),
   .d_out(audio_dout)
 );
 

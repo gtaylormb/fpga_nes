@@ -1,0 +1,1781 @@
+
+*** Running vivado
+    with args -log nes_zybo_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source nes_zybo_wrapper.tcl -notrace
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source nes_zybo_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/mmcm_synth_1/mmcm.dcp' for cell 'mmcm'
+INFO: [Project 1-454] Reading design checkpoint '/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/processing_system7_0_synth_1/processing_system7_0.dcp' for cell 'arm_cpu'
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm_board.xdc] for cell 'mmcm/inst'
+Finished Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm_board.xdc] for cell 'mmcm/inst'
+Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm.xdc] for cell 'mmcm/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm.xdc:56]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1602.496 ; gain = 451.508 ; free physical = 2280 ; free virtual = 8784
+Finished Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/mmcm/mmcm.xdc] for cell 'mmcm/inst'
+Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/processing_system7_0/processing_system7_0.xdc] for cell 'arm_cpu/inst'
+Finished Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.srcs/sources_1/ip/processing_system7_0/processing_system7_0.xdc] for cell 'arm_cpu/inst'
+Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/ZYBO_Master.xdc]
+Finished Parsing XDC File [/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/src/zybo/ZYBO_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/mmcm_synth_1/mmcm.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/processing_system7_0_synth_1/processing_system7_0.dcp'
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 24 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 24 instances
+
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1604.496 ; gain = 691.375 ; free physical = 2277 ; free virtual = 8782
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1607.508 ; gain = 2.902 ; free physical = 2276 ; free virtual = 8781
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1f0dc0e9c
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1614.508 ; gain = 0.000 ; free physical = 2276 ; free virtual = 8780
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1f0dc0e9c
+
+Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1614.508 ; gain = 0.000 ; free physical = 2276 ; free virtual = 8780
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 236 unconnected nets.
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 89 unconnected cells.
+Phase 3 Sweep | Checksum: 1a05cdafc
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.56 . Memory (MB): peak = 1614.508 ; gain = 0.000 ; free physical = 2276 ; free virtual = 8780
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.508 ; gain = 0.000 ; free physical = 2276 ; free virtual = 8780
+Ending Logic Optimization Task | Checksum: 1a05cdafc
+
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.57 . Memory (MB): peak = 1614.508 ; gain = 0.000 ; free physical = 2276 ; free virtual = 8780
+Implement Debug Cores | Checksum: 155a789ce
+Logic Optimization | Checksum: 155a789ce
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.12 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 12 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 24
+Ending PowerOpt Patch Enables Task | Checksum: 1a05cdafc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.516 ; gain = 0.000 ; free physical = 2272 ; free virtual = 8776
+Ending Power Optimization Task | Checksum: 1a05cdafc
+
+Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1678.516 ; gain = 64.008 ; free physical = 2272 ; free virtual = 8776
+INFO: [Common 17-83] Releasing license: Implementation
+32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1710.523 ; gain = 0.000 ; free physical = 2269 ; free virtual = 8776
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/impl_4/nes_zybo_wrapper_drc_opted.rpt.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 109b4eabe
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2267 ; free virtual = 8774
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2267 ; free virtual = 8774
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2267 ; free virtual = 8774
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 49d246d7
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2267 ; free virtual = 8774
+WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
+	FIXED_IO_mio[53] of IOStandard LVCMOS18
+	FIXED_IO_mio[52] of IOStandard LVCMOS18
+	FIXED_IO_mio[51] of IOStandard LVCMOS18
+	FIXED_IO_mio[50] of IOStandard LVCMOS18
+	FIXED_IO_mio[49] of IOStandard LVCMOS18
+	FIXED_IO_mio[48] of IOStandard LVCMOS18
+	FIXED_IO_mio[47] of IOStandard LVCMOS18
+	FIXED_IO_mio[46] of IOStandard LVCMOS18
+	FIXED_IO_mio[45] of IOStandard LVCMOS18
+	FIXED_IO_mio[44] of IOStandard LVCMOS18
+	FIXED_IO_mio[43] of IOStandard LVCMOS18
+	FIXED_IO_mio[42] of IOStandard LVCMOS18
+	FIXED_IO_mio[41] of IOStandard LVCMOS18
+	FIXED_IO_mio[40] of IOStandard LVCMOS18
+	FIXED_IO_mio[39] of IOStandard LVCMOS18
+	FIXED_IO_mio[38] of IOStandard LVCMOS18
+	FIXED_IO_mio[37] of IOStandard LVCMOS18
+	FIXED_IO_mio[36] of IOStandard LVCMOS18
+	FIXED_IO_mio[35] of IOStandard LVCMOS18
+	FIXED_IO_mio[34] of IOStandard LVCMOS18
+	FIXED_IO_mio[33] of IOStandard LVCMOS18
+	FIXED_IO_mio[32] of IOStandard LVCMOS18
+	FIXED_IO_mio[31] of IOStandard LVCMOS18
+	FIXED_IO_mio[30] of IOStandard LVCMOS18
+	FIXED_IO_mio[29] of IOStandard LVCMOS18
+	FIXED_IO_mio[28] of IOStandard LVCMOS18
+	FIXED_IO_mio[27] of IOStandard HSTL_I_18
+	FIXED_IO_mio[26] of IOStandard HSTL_I_18
+	FIXED_IO_mio[25] of IOStandard HSTL_I_18
+	FIXED_IO_mio[24] of IOStandard HSTL_I_18
+	FIXED_IO_mio[23] of IOStandard HSTL_I_18
+	FIXED_IO_mio[22] of IOStandard HSTL_I_18
+	FIXED_IO_mio[21] of IOStandard HSTL_I_18
+	FIXED_IO_mio[20] of IOStandard HSTL_I_18
+	FIXED_IO_mio[19] of IOStandard HSTL_I_18
+	FIXED_IO_mio[18] of IOStandard HSTL_I_18
+	FIXED_IO_mio[17] of IOStandard HSTL_I_18
+	FIXED_IO_mio[16] of IOStandard HSTL_I_18
+	FIXED_IO_mio[15] of IOStandard LVCMOS18
+	FIXED_IO_mio[14] of IOStandard LVCMOS18
+	FIXED_IO_mio[13] of IOStandard LVCMOS18
+	FIXED_IO_mio[12] of IOStandard LVCMOS18
+	FIXED_IO_mio[11] of IOStandard LVCMOS18
+	FIXED_IO_mio[10] of IOStandard LVCMOS18
+	FIXED_IO_mio[9] of IOStandard LVCMOS18
+	FIXED_IO_mio[8] of IOStandard LVCMOS18
+	FIXED_IO_mio[7] of IOStandard LVCMOS18
+	FIXED_IO_mio[6] of IOStandard LVCMOS33
+	FIXED_IO_mio[5] of IOStandard LVCMOS33
+	FIXED_IO_mio[4] of IOStandard LVCMOS33
+	FIXED_IO_mio[3] of IOStandard LVCMOS33
+	FIXED_IO_mio[2] of IOStandard LVCMOS33
+	FIXED_IO_mio[1] of IOStandard LVCMOS33
+	FIXED_IO_mio[0] of IOStandard LVCMOS18
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 49d246d7
+
+Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:03 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2227 ; free virtual = 8734
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 49d246d7
+
+Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:03 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2227 ; free virtual = 8734
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: 3dedfa9b
+
+Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:03 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2227 ; free virtual = 8734
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 633b5a24
+
+Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:03 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2227 ; free virtual = 8734
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+
+Phase 2.2.1.1 Init Lut Pin Assignment
+Phase 2.2.1.1 Init Lut Pin Assignment | Checksum: 155c3f50b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+Phase 2.2.1 Place Init Design | Checksum: dbb28c50
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+Phase 2.2 Build Placer Netlist Model | Checksum: dbb28c50
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: dbb28c50
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+Phase 2.3 Constrain Clocks/Macros | Checksum: dbb28c50
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+Phase 2 Placer Initialization | Checksum: dbb28c50
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1710.535 ; gain = 0.000 ; free physical = 2226 ; free virtual = 8733
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 15d074785
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 15d074785
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 12121993b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 118c5452c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 118c5452c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 1b25c09d8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 18d9a92b2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 4.6 Small Shape Detail Placement | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 4 Detail Placement | Checksum: b0a03df0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 14f4c9b53
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 14f4c9b53
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.558. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 5.2.2 Post Placement Optimization | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 5.2 Post Commit Optimization | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 5.5 Placer Reporting | Checksum: 1c746290f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 136eb0445
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 136eb0445
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+Ending Placer Task | Checksum: b954be1d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 1726.531 ; gain = 15.996 ; free physical = 2225 ; free virtual = 8732
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 1726.531 ; gain = 16.004 ; free physical = 2225 ; free virtual = 8732
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.57 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2223 ; free virtual = 8733
+report_io: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+report_control_sets: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 18540a8e2
+
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.55 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.502 | TNS=-3.470 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 12 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_n_0. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]. Replicated 4 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[1]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[0]. Replicated 2 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 12 nets. Created 26 new instances.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.382 | TNS=-2.339 |
+Phase 2 Fanout Optimization | Checksum: 10447b8b7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 82 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_46
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_v_i_6
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/addc.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_36
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_93_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_93
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[6]_i_13_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[6]_i_13
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_95_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_95
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_9
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_10
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_100
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_3_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_27_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_27
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/acr.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_acr_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_61_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_61
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[0]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_67
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_105_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_105
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_97_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_97
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_41_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_41
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_92
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_101
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1].  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_x[7]_i_9
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_140_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_140
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN_2.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[7]_replica_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_14_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_14
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_31_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_31
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_75_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_75
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_113_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_113
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_99_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_99
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_7
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_irq_sel[1]_i_2_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_irq_sel[1]_i_2
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_11_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_irq_sel[0]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_irq_sel[0]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_5_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_5
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_i_1_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir[5]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[1]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[1]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_69_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_69
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_108_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_108
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_102_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_102
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[7]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_132_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_132
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_144_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_144
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_96_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_96
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_139_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_139
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[6]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[5]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ai[7]_i_42_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ai[7]_i_42
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_14_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_14
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_46_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_46
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_98_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_98
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t[2]_i_34_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t[2]_i_34
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_2_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[7]_replica_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[5]_replica_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2].  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_irq_sel_reg_n_0_[0].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_irq_sel_reg[0]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg_n_0_[5].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch_reg[5]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl_reg_n_0_[5].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl_reg[5]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg_n_0_[3].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch_reg[3]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg_n_0_[1].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch_reg[1]
+INFO: [Physopt 32-661] Optimized 22 nets.  Re-placed 22 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.382 | TNS=-1.183 |
+Phase 3 Placement Based Optimization | Checksum: 1e227425f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-197] Pass 1. Identified 1 candidate net for rewire optimization.
+INFO: [Physopt 32-134] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-29] End Pass 1. Optimized 0 net. Created 0 new instance.
+
+INFO: [Physopt 32-238] Finished Signal Push optimization...
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Phase 4 Rewire | Checksum: 17fece4b5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 17 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-571] Net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0 was not replicated.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/addc was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0. Net driver nes/rp2a03_blk/cpu_blk/q_add[7]_i_100 was replaced.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/acr was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_41_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 1 net. Created 0 new instance.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.278 | TNS=-0.659 |
+Phase 5 Critical Cell Optimization | Checksum: 18f9ae414
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 6 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]. Replicated 2 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 2 nets. Created 3 new instances.
+
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.278 | TNS=-0.666 |
+Phase 6 Fanout Optimization | Checksum: f7065592
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 7 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[5]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_100
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_27_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_27
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/addc.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_36
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[6]_i_13_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[6]_i_13
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_61_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_61
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_95_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_95
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_9
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_10
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_46
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_v_i_6
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_93_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_93
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_101
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[0]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_67
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_105_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_105
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_97_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_97
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[6]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_41_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_41
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_92
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_3_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_3
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/acr.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_acr_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_74_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_74
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_112_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_112
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_99_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_99
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_14_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_14
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_31_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_31
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_n_0_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_94_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_94
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[1]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[1]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_36_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_bi[7]_i_36
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_v_i_8_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_v_i_8
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_75_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_75
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[7]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_106_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_106
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_37_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_37
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_11
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_y[7]_i_7_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_y[7]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[2]_i_34_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[2]_i_34
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[0]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[0]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_x[7]_i_9
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_140_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_140
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_38_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_38
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[8]_0.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[8]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0_reg[3]_2.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[5]_i_8
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[3]_i_11_n_0.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[3]_i_11
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/envelope_generator/sample_100_r0_reg[3]_1.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/envelope_generator/sample_100_r0[5]_i_31
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/length_counter/sample_100_r0_reg[3]_1.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/length_counter/sample_100_r0[5]_i_25
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[7]_i_14_n_0.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[7]_i_14
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_mixer_blk/sample_100_update_i_3_n_0.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_mixer_blk/sample_100_update_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_mixer_blk/sample_100_update_reg.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_mixer_blk/sample_100_update_i_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/p_1_in[0].  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[3]_i_5
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[5]_i_21_n_0.  Re-placed instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[5]_i_21
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[7]_i_22_n_0.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[7]_i_22
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_y[7]_i_11_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_y[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_14_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_s[7]_i_14
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_40_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_s[7]_i_40
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_69_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_69
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_108_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_108
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_7
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t[2]_i_3_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t[2]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_78_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_s[7]_i_78
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[2]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[2]_i_11
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_11_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_11
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t[2]_i_36_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t[2]_i_36
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[4]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1].  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_141_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_141
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_150_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_150
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_96_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_96
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_nmi_i_6_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_nmi_i_6
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN_1.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_71_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_71
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_113_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_113
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_145_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_145
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_98_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_98
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_111_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_111
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ai[7]_i_4_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ai[7]_i_4
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_79_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_79
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/p_1_in[3].  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0[3]_i_2
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_21_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_s[7]_i_21
+INFO: [Physopt 32-661] Optimized 37 nets.  Re-placed 37 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.273 | TNS=-0.847 |
+Phase 7 Placement Based Optimization | Checksum: e808dfc9
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 8 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-197] Pass 1. Identified 2 candidate nets for rewire optimization.
+INFO: [Physopt 32-134] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-134] Processed net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-29] End Pass 1. Optimized 0 net. Created 0 new instance.
+
+INFO: [Physopt 32-238] Finished Signal Push optimization...
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Phase 8 Rewire | Checksum: c9ae911b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 9 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 28 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/addc was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_14_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_32_n_0. Replicated 1 times.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[1]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/acr was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-571] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0 was not replicated.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_14_n_0. Replicated 1 times.
+INFO: [Physopt 32-571] Net nes/rp2a03_blk/cpu_blk/q_bi[7]_i_46_n_0 was not replicated.
+INFO: [Physopt 32-571] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_5_n_0 was not replicated.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ir[6]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_108_n_0. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 3 new instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.273 | TNS=-0.847 |
+Phase 9 Critical Cell Optimization | Checksum: 1aa40ca68
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 10 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-29] End Pass 1. Optimized 0 net. Created 0 new instance.
+
+Phase 10 Fanout Optimization | Checksum: 1b63de533
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 11 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_100
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_27_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_27
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/addc.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_36
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[6]_i_13_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[6]_i_13
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_61_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_61
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_95_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_95
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[5]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_9
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_46
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_v_i_6
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_93_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_93
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_10
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[0]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_67
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_105_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_105
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_97_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_97
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_101
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_41_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_41
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_92
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_3_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[1]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[1]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/acr.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_acr_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_8
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[2]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t[0]_i_3
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_2_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_7_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pcl[3]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_17
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[5]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[6]_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[7]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_5_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_5
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]_i_1_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir[6]_i_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_x[7]_i_9
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_140_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_140
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_y[7]_i_7_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_y[7]_i_7
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_38_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_38
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_75_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_75
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_99_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_99
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[1]_repN.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[1]_replica
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_69_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_69
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_108_n_0_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_108_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1].  Re-placed instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir[7]_i_2
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_37_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_37
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_11_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_11
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_71_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_71
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_n_0_repN.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_replica
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_113_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_113
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN_1.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_139_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_139
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_86_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_86
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_141_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_141
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_96_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_96
+INFO: [Physopt 32-663] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_rgb_reg[0].  Re-placed instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_rgb[0]_i_1
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_hsync_reg_0.  Did not re-place instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_hcnt_reg[7]
+INFO: [Physopt 32-663] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_rgb_reg[7]_0.  Re-placed instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/g0_b0__0_i_24
+INFO: [Physopt 32-663] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_pri_obj_col_reg_0.  Re-placed instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_pri_obj_col_i_2
+INFO: [Physopt 32-663] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_in_rng_cnt[3]_i_4_n_0.  Re-placed instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_in_rng_cnt[3]_i_4
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/g0_b0__0_i_12_n_0.  Did not re-place instance nes/ppu_blk/ppu_spr_blk/g0_b0__0_i_12
+INFO: [Physopt 32-663] Processed net nes/ppu_blk/ppu_spr_blk/g0_b0__0_i_35_n_0.  Re-placed instance nes/ppu_blk/ppu_spr_blk/g0_b0__0_i_35
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/out[0].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/g0_b0__0
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_1_n_0.  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_pch[3]_i_1
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_132_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_132
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_144_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_144
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_102_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_102
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]_replica_1
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data4[1].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj4_pd1_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/m_sbm_reg[3][27].  Did not re-place instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_hcnt_reg[6]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data6[0].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj6_pd0_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data5[1].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj5_pd1_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2].  Did not re-place instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3].  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[3]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_en_reg_0.  Did not re-place instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_hcnt_reg[8]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data7[0].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj7_pd0_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data6[1].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj6_pd1_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_vga_blk/vga_sync_blk/m_sbm_reg[3][27]_0.  Did not re-place instance nes/ppu_blk/ppu_vga_blk/vga_sync_blk/q_hcnt_reg[5]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[10]_0.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[10]
+INFO: [Physopt 32-662] Processed net nes/ppu_blk/ppu_spr_blk/data5[0].  Did not re-place instance nes/ppu_blk/ppu_spr_blk/q_obj5_pd0_shift_reg[0]
+INFO: [Physopt 32-662] Processed net nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr[2].  Did not re-place instance nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr_reg[2]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[8]_0.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[8]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period[6].  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[6]
+INFO: [Physopt 32-662] Processed net nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr[1].  Did not re-place instance nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr_reg[1]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[5].  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[5]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[8]_0.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[8]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[10]_0.  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[10]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[6].  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period_reg[6]
+INFO: [Physopt 32-662] Processed net nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period[4].  Did not re-place instance nes/rp2a03_blk/apu_blk/apu_pulse0_blk/q_timer_period_reg[4]
+INFO: [Physopt 32-662] Processed net nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr[0].  Did not re-place instance nes/hci_blk/uart_blk/uart_rx_fifo/q_rd_ptr_reg[0]
+INFO: [Physopt 32-661] Optimized 20 nets.  Re-placed 20 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.273 | TNS=-0.815 |
+Phase 11 Placement Based Optimization | Checksum: 130d22b61
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 12 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Phase 12 Rewire | Checksum: 111b5aae1
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 13 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 12 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/addc was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_v_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_92_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-571] Net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0 was not replicated.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_ai[7]_i_42_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net nes/rp2a03_blk/cpu_blk/q_add[7]_i_74_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+Phase 13 Critical Cell Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 14 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 14 DSP Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 15 BRAM Register Optimization
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/chrrom_pat_bram/ram_reg_0' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/chrrom_pat_bram/ram_reg_1' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_0' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_1' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_2' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_3' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_4' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_5' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_6' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_7' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/vram_blk/vram_bram/ram_reg' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/wram_blk/wram_bram/ram_reg' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 15 BRAM Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 16 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 16 Shift Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 17 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 17 DSP Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 18 BRAM Register Optimization
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/chrrom_pat_bram/ram_reg_0' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/chrrom_pat_bram/ram_reg_1' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_0' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_1' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_2' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_3' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_4' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_5' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_6' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/cart_blk/prgrom_bram/ram_reg_7' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/vram_blk/vram_bram/ram_reg' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'nes/wram_blk/wram_bram/ram_reg' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 18 BRAM Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 19 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 19 Shift Register Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 20 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 59 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_100_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/d_pcl0[13].  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_9_n_0.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_46_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_93_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_ir[3]_repN.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_t[1]_i_10_n_0.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN.  Swapped 2 critical pin.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_67_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN.  Swapped 4 critical pin.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/d_pcl0[9].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_101_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_3_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_i_4_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_ir[5]_repN.  Swapped 2 critical pin.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_74_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_ir[6]_repN.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_38_n_0.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_75_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_40_n_0.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-613] Processed net nes/rp2a03_blk/cpu_blk/q_abh[7]_i_14_n_0_repN.  Swapped 1 critical pins.
+INFO: [Physopt 32-609] Processed net nes/rp2a03_blk/cpu_blk/q_ir[1]_repN.  Critical pin optimization did not optimize the net.
+INFO: [Physopt 32-608] Optimized 17 nets.  Swapped 22 pins.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.020 | TNS=-0.020 |
+Phase 20 Critical Pin Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 21 Very High Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 21 Very High Fanout Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+
+Phase 22 BRAM Enable Optimization
+Phase 22 BRAM Enable Optimization | Checksum: 1284185cc
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.020 | TNS=-0.020 |
+Ending Physical Synthesis Task | Checksum: 114181b6b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+INFO: [Common 17-83] Releasing license: Implementation
+495 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2222 ; free virtual = 8732
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.56 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2219 ; free virtual = 8733
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are:  FIXED_IO_mio[53] of IOStandard LVCMOS18; FIXED_IO_mio[52] of IOStandard LVCMOS18; FIXED_IO_mio[51] of IOStandard LVCMOS18; FIXED_IO_mio[50] of IOStandard LVCMOS18; FIXED_IO_mio[49] of IOStandard LVCMOS18; FIXED_IO_mio[48] of IOStandard LVCMOS18; FIXED_IO_mio[47] of IOStandard LVCMOS18; FIXED_IO_mio[46] of IOStandard LVCMOS18; FIXED_IO_mio[45] of IOStandard LVCMOS18; FIXED_IO_mio[44] of IOStandard LVCMOS18; FIXED_IO_mio[43] of IOStandard LVCMOS18; FIXED_IO_mio[42] of IOStandard LVCMOS18; FIXED_IO_mio[41] of IOStandard LVCMOS18; FIXED_IO_mio[40] of IOStandard LVCMOS18; FIXED_IO_mio[39] of IOStandard LVCMOS18; FIXED_IO_mio[38] of IOStandard LVCMOS18; FIXED_IO_mio[37] of IOStandard LVCMOS18; FIXED_IO_mio[36] of IOStandard LVCMOS18; FIXED_IO_mio[35] of IOStandard LVCMOS18; FIXED_IO_mio[34] of IOStandard LVCMOS18; FIXED_IO_mio[33] of IOStandard LVCMOS18; FIXED_IO_mio[32] of IOStandard LVCMOS18; FIXED_IO_mio[31] of IOStandard LVCMOS18; FIXED_IO_mio[30] of IOStandard LVCMOS18; FIXED_IO_mio[29] of IOStandard LVCMOS18; FIXED_IO_mio[28] of IOStandard LVCMOS18; FIXED_IO_mio[27] of IOStandard HSTL_I_18; FIXED_IO_mio[26] of IOStandard HSTL_I_18; FIXED_IO_mio[25] of IOStandard HSTL_I_18; FIXED_IO_mio[24] of IOStandard HSTL_I_18; FIXED_IO_mio[23] of IOStandard HSTL_I_18; FIXED_IO_mio[22] of IOStandard HSTL_I_18; FIXED_IO_mio[21] of IOStandard HSTL_I_18; FIXED_IO_mio[20] of IOStandard HSTL_I_18; FIXED_IO_mio[19] of IOStandard HSTL_I_18; FIXED_IO_mio[18] of IOStandard HSTL_I_18; FIXED_IO_mio[17] of IOStandard HSTL_I_18; FIXED_IO_mio[16] of IOStandard HSTL_I_18; FIXED_IO_mio[15] of IOStandard LVCMOS18; FIXED_IO_mio[14] of IOStandard LVCMOS18; FIXED_IO_mio[13] of IOStandard LVCMOS18; FIXED_IO_mio[12] of IOStandard LVCMOS18; FIXED_IO_mio[11] of IOStandard LVCMOS18; FIXED_IO_mio[10] of IOStandard LVCMOS18; FIXED_IO_mio[9] of IOStandard LVCMOS18; FIXED_IO_mio[8] of IOStandard LVCMOS18; FIXED_IO_mio[7] of IOStandard LVCMOS18; FIXED_IO_mio[6] of IOStandard LVCMOS33; FIXED_IO_mio[5] of IOStandard LVCMOS33; FIXED_IO_mio[4] of IOStandard LVCMOS33; FIXED_IO_mio[3] of IOStandard LVCMOS33; FIXED_IO_mio[2] of IOStandard LVCMOS33; FIXED_IO_mio[1] of IOStandard LVCMOS33; FIXED_IO_mio[0] of IOStandard LVCMOS18;
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 9e516ff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2189 ; free virtual = 8703
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 9e516ff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2185 ; free virtual = 8699
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 9e516ff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1726.531 ; gain = 0.000 ; free physical = 2177 ; free virtual = 8690
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1fd0c72f1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2165 ; free virtual = 8679
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.058  | TNS=0.000  | WHS=-0.203 | THS=-89.248|
+
+Phase 2 Router Initialization | Checksum: 19762895f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2164 ; free virtual = 8677
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 185e7261d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2158 ; free virtual = 8672
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1288
+ Number of Nodes with overlaps = 355
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: e43e9b4b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.603 | TNS=-18.990| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: f79c1591
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 10e34087d
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+Phase 4.1.2 GlobIterForTiming | Checksum: 18677b646
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+Phase 4.1 Global Iteration 0 | Checksum: 18677b646
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 376
+ Number of Nodes with overlaps = 95
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 11627329d
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.054 | TNS=-39.912| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1865729d5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+Phase 4 Rip-up And Reroute | Checksum: 1865729d5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 11613cf34
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.454 | TNS=-10.689| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1b0095d98
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1b0095d98
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+Phase 5 Delay and Skew Optimization | Checksum: 1b0095d98
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 1f55401bc
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.389 | TNS=-7.806 | WHS=0.022  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 131575c35
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 20f695360
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.389 | TNS=-7.806 | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 20f695360
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.67849 %
+  Global Horizontal Routing Utilization  = 3.36673 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 63.0631%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 49.5495%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 61.7647%, No Congested Regions.
+Phase 8 Route finalize | Checksum: 20f695360
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 20f695360
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2732a79b1
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1730.523 ; gain = 3.992 ; free physical = 2155 ; free virtual = 8669
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.523 ; gain = 0.000 ; free physical = 2155 ; free virtual = 8669
+WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
+	FIXED_IO_mio[53] of IOStandard LVCMOS18
+	FIXED_IO_mio[52] of IOStandard LVCMOS18
+	FIXED_IO_mio[51] of IOStandard LVCMOS18
+	FIXED_IO_mio[50] of IOStandard LVCMOS18
+	FIXED_IO_mio[49] of IOStandard LVCMOS18
+	FIXED_IO_mio[48] of IOStandard LVCMOS18
+	FIXED_IO_mio[47] of IOStandard LVCMOS18
+	FIXED_IO_mio[46] of IOStandard LVCMOS18
+	FIXED_IO_mio[45] of IOStandard LVCMOS18
+	FIXED_IO_mio[44] of IOStandard LVCMOS18
+	FIXED_IO_mio[43] of IOStandard LVCMOS18
+	FIXED_IO_mio[42] of IOStandard LVCMOS18
+	FIXED_IO_mio[41] of IOStandard LVCMOS18
+	FIXED_IO_mio[40] of IOStandard LVCMOS18
+	FIXED_IO_mio[39] of IOStandard LVCMOS18
+	FIXED_IO_mio[38] of IOStandard LVCMOS18
+	FIXED_IO_mio[37] of IOStandard LVCMOS18
+	FIXED_IO_mio[36] of IOStandard LVCMOS18
+	FIXED_IO_mio[35] of IOStandard LVCMOS18
+	FIXED_IO_mio[34] of IOStandard LVCMOS18
+	FIXED_IO_mio[33] of IOStandard LVCMOS18
+	FIXED_IO_mio[32] of IOStandard LVCMOS18
+	FIXED_IO_mio[31] of IOStandard LVCMOS18
+	FIXED_IO_mio[30] of IOStandard LVCMOS18
+	FIXED_IO_mio[29] of IOStandard LVCMOS18
+	FIXED_IO_mio[28] of IOStandard LVCMOS18
+	FIXED_IO_mio[27] of IOStandard HSTL_I_18
+	FIXED_IO_mio[26] of IOStandard HSTL_I_18
+	FIXED_IO_mio[25] of IOStandard HSTL_I_18
+	FIXED_IO_mio[24] of IOStandard HSTL_I_18
+	FIXED_IO_mio[23] of IOStandard HSTL_I_18
+	FIXED_IO_mio[22] of IOStandard HSTL_I_18
+	FIXED_IO_mio[21] of IOStandard HSTL_I_18
+	FIXED_IO_mio[20] of IOStandard HSTL_I_18
+	FIXED_IO_mio[19] of IOStandard HSTL_I_18
+	FIXED_IO_mio[18] of IOStandard HSTL_I_18
+	FIXED_IO_mio[17] of IOStandard HSTL_I_18
+	FIXED_IO_mio[16] of IOStandard HSTL_I_18
+	FIXED_IO_mio[15] of IOStandard LVCMOS18
+	FIXED_IO_mio[14] of IOStandard LVCMOS18
+	FIXED_IO_mio[13] of IOStandard LVCMOS18
+	FIXED_IO_mio[12] of IOStandard LVCMOS18
+	FIXED_IO_mio[11] of IOStandard LVCMOS18
+	FIXED_IO_mio[10] of IOStandard LVCMOS18
+	FIXED_IO_mio[9] of IOStandard LVCMOS18
+	FIXED_IO_mio[8] of IOStandard LVCMOS18
+	FIXED_IO_mio[7] of IOStandard LVCMOS18
+	FIXED_IO_mio[6] of IOStandard LVCMOS33
+	FIXED_IO_mio[5] of IOStandard LVCMOS33
+	FIXED_IO_mio[4] of IOStandard LVCMOS33
+	FIXED_IO_mio[3] of IOStandard LVCMOS33
+	FIXED_IO_mio[2] of IOStandard LVCMOS33
+	FIXED_IO_mio[1] of IOStandard LVCMOS33
+	FIXED_IO_mio[0] of IOStandard LVCMOS18
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.107. For the most accurate timing information please run report_timing.
+Phase 11 Incr Placement Change | Checksum: 2732a79b1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1738.523 ; gain = 11.992 ; free physical = 2155 ; free virtual = 8668
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: dd6af899
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1738.523 ; gain = 11.992 ; free physical = 2155 ; free virtual = 8668
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: c2e2dde6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1738.527 ; gain = 11.996 ; free physical = 2155 ; free virtual = 8668
+
+Phase 13.2 Pre Route Cleanup
+Phase 13.2 Pre Route Cleanup | Checksum: 15b68e0f2
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1740.523 ; gain = 13.992 ; free physical = 2153 ; free virtual = 8666
+ Number of Nodes with overlaps = 0
+
+Phase 13.3 Update Timing
+Phase 13.3 Update Timing | Checksum: 10373b5b3
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2150 ; free virtual = 8664
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.512 | TNS=-4.165 | WHS=-0.203 | THS=-88.857|
+
+Phase 13 Router Initialization | Checksum: 14f68a515
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2150 ; free virtual = 8664
+
+Phase 14 Initial Routing
+Phase 14 Initial Routing | Checksum: 2558fcd88
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2148 ; free virtual = 8662
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 437
+ Number of Nodes with overlaps = 168
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 15.1.1 Update Timing
+Phase 15.1.1 Update Timing | Checksum: d0e7357d
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2146 ; free virtual = 8660
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.775 | TNS=-24.191| WHS=N/A    | THS=N/A    |
+
+
+Phase 15.1.2 GlobIterForTiming
+
+Phase 15.1.2.1 Update Timing
+Phase 15.1.2.1 Update Timing | Checksum: 2011d3cfd
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2146 ; free virtual = 8660
+
+Phase 15.1.2.2 Fast Budgeting
+Phase 15.1.2.2 Fast Budgeting | Checksum: 20a69fb2e
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2145 ; free virtual = 8659
+Phase 15.1.2 GlobIterForTiming | Checksum: 1797b7a67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2145 ; free virtual = 8659
+Phase 15.1 Global Iteration 0 | Checksum: 1797b7a67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2145 ; free virtual = 8659
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 251
+ Number of Nodes with overlaps = 135
+ Number of Nodes with overlaps = 71
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+INFO: [Route 35-325] The following overlapped nodes exist in the design and there is low overall congestion. 
+1. INT_L_X28Y93/IMUX_L27
+Overlapping nets: 2
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0_reg[3]_3
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/length_counter/sample_100_r0_reg[3]_1
+2. INT_L_X28Y91/IMUX_L31
+Overlapping nets: 2
+	nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_timer_period[7]
+	nes/rp2a03_blk/apu_blk/apu_pulse1_blk/q_sweep_reg_reg_n_0_[2]
+
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+INFO: [Route 35-325] The following overlapped node exist in the design and there is low overall congestion. 
+1. INT_R_X27Y94/SE2BEG1
+Overlapping nets: 2
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/length_counter/sample_100_r0_reg[3]_0
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0_reg[3]_0
+
+ Number of Nodes with overlaps = 0
+
+Phase 15.2.1 Update Timing
+Phase 15.2.1 Update Timing | Checksum: 1ad80b5d9
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.613 | TNS=-9.258 | WHS=N/A    | THS=N/A    |
+
+
+Phase 15.2.2 GlobIterForTiming
+
+Phase 15.2.2.1 Update Timing
+Phase 15.2.2.1 Update Timing | Checksum: 1b536398b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.2.2.2 Fast Budgeting
+Phase 15.2.2.2 Fast Budgeting | Checksum: 1651efb83
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.2.2 GlobIterForTiming | Checksum: 264278bde
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.2 Global Iteration 1 | Checksum: 264278bde
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.3 Global Iteration 2
+ Number of Nodes with overlaps = 308
+ Number of Nodes with overlaps = 143
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 15.3.1 Update Timing
+Phase 15.3.1 Update Timing | Checksum: 10ff98ee9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.593 | TNS=-12.174| WHS=N/A    | THS=N/A    |
+
+
+Phase 15.3.2 GlobIterForTiming
+
+Phase 15.3.2.1 Update Timing
+Phase 15.3.2.1 Update Timing | Checksum: 221d63d73
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.3.2.2 Fast Budgeting
+Phase 15.3.2.2 Fast Budgeting | Checksum: 1d7d1a4c5
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.3.2 GlobIterForTiming | Checksum: c88b8318
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.3 Global Iteration 2 | Checksum: c88b8318
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.4 Global Iteration 3
+ Number of Nodes with overlaps = 188
+ Number of Nodes with overlaps = 100
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 7
+INFO: [Route 35-325] The following overlapped nodes exist in the design and there is low overall congestion. 
+1. INT_L_X16Y70/IMUX_L10
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_ir[1]_repN
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN
+2. INT_L_X14Y71/IMUX_L5
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_abh[7]_i_16_n_0
+	nes/rp2a03_blk/cpu_blk/q_abh[7]_i_18_n_0
+3. INT_L_X16Y74/IMUX_L21
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_74_n_0
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_75_n_0
+4. INT_R_X17Y71/IMUX46
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_s[7]_i_24_n_0
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_116_n_0
+5. INT_L_X16Y73/IMUX_L47
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN
+6. INT_R_X27Y94/IMUX16
+Overlapping nets: 2
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0_reg[3]_4
+	nes/rp2a03_blk/apu_blk/apu_pulse0_blk/envelope_generator/sample_100_r0_reg[3]_1
+7. INT_R_X15Y71/EE2BEG3
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_97_n_0
+	nes/rp2a03_blk/cpu_blk/q_s[7]_i_24_n_0
+
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 15.4.1 Update Timing
+Phase 15.4.1 Update Timing | Checksum: 14fc99ff9
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.578 | TNS=-9.805 | WHS=N/A    | THS=N/A    |
+
+
+Phase 15.4.2 GlobIterForTiming
+
+Phase 15.4.2.1 Update Timing
+Phase 15.4.2.1 Update Timing | Checksum: 1289dc1a4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.4.2.2 Fast Budgeting
+Phase 15.4.2.2 Fast Budgeting | Checksum: 10fb4c098
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.4.2 GlobIterForTiming | Checksum: 15367a3ee
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.4 Global Iteration 3 | Checksum: 15367a3ee
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.5 Global Iteration 4
+ Number of Nodes with overlaps = 83
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 15.5.1 Update Timing
+Phase 15.5.1 Update Timing | Checksum: 2176f5225
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.338 | TNS=-1.567 | WHS=N/A    | THS=N/A    |
+
+
+Phase 15.5.2 GlobIterForTiming
+
+Phase 15.5.2.1 Update Timing
+Phase 15.5.2.1 Update Timing | Checksum: b3406f6e
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.5.2.2 Fast Budgeting
+Phase 15.5.2.2 Fast Budgeting | Checksum: 15ca9fed2
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.5.2 GlobIterForTiming | Checksum: 199f4a37c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15.5 Global Iteration 4 | Checksum: 199f4a37c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:28 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 15.6 Global Iteration 5
+ Number of Nodes with overlaps = 195
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 4
+INFO: [Route 35-325] The following overlapped nodes exist in the design and there is low overall congestion. 
+1. INT_L_X14Y73/IMUX_L42
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_y[7]_i_11_n_0
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_106_n_0
+2. INT_L_X14Y73/IMUX_L9
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN
+3. INT_R_X15Y73/WR1BEG1
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_y[7]_i_11_n_0
+	nes/rp2a03_blk/cpu_blk/q_add[7]_i_106_n_0
+4. INT_L_X16Y68/NW2BEG1
+Overlapping nets: 2
+	nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN
+	nes/rp2a03_blk/cpu_blk/q_x[7]_i_9_n_0
+
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 15.6.1 Update Timing
+Phase 15.6.1 Update Timing | Checksum: f6136078
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.404 | TNS=-2.319 | WHS=N/A    | THS=N/A    |
+
+Phase 15.6 Global Iteration 5 | Checksum: 2357a91ee
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 15 Rip-up And Reroute | Checksum: 2357a91ee
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: 25f4529cb
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.263 | TNS=-0.564 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 16.1 Delay CleanUp | Checksum: 1bfd02544
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 1bfd02544
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+Phase 16 Delay and Skew Optimization | Checksum: 1bfd02544
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Update Timing
+Phase 17.1 Update Timing | Checksum: 1b772c68c
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.226 | TNS=-0.362 | WHS=0.047  | THS=0.000  |
+
+Phase 17 Post Hold Fix | Checksum: 16b4881f3
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 19173982c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.226 | TNS=-0.362 | WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 19173982c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 19 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.69637 %
+  Global Horizontal Routing Utilization  = 3.37201 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 56.7568%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+Phase 19 Route finalize | Checksum: 19173982c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2144 ; free virtual = 8658
+
+Phase 20 Verifying routed nets
+
+ Verification completed successfully
+Phase 20 Verifying routed nets | Checksum: 19173982c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2143 ; free virtual = 8657
+
+Phase 21 Depositing Routes
+Phase 21 Depositing Routes | Checksum: 16ba5f9be
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2143 ; free virtual = 8657
+
+Phase 22 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-0.223 | TNS=-0.351 | WHS=0.049  | THS=0.000  |
+
+WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 22 Post Router Timing | Checksum: 16ba5f9be
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:31 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2143 ; free virtual = 8657
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:31 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2143 ; free virtual = 8657
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+529 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 1743.523 ; gain = 16.992 ; free physical = 2143 ; free virtual = 8657
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.64 . Memory (MB): peak = 1752.523 ; gain = 0.000 ; free physical = 2139 ; free virtual = 8657
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /media/sf_D_DRIVE/Users/Greg/git/fpga_nes/hw/zybo_vivado/zybo_vivado.runs/impl_4/nes_zybo_wrapper_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 138e60b1e
+----- Checksum: : 1289111a4 : 1054f97a 
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1776.559 ; gain = 0.000 ; free physical = 2111 ; free virtual = 8631
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1776.559 ; gain = 0.000 ; free physical = 2111 ; free virtual = 8631
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.223 | TNS=-0.351 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg_n_0_[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[1]_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.214 | TNS=-0.599 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[0]_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.196 | TNS=-0.373 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN_1.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica_1
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.113 | TNS=-0.177 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[1]_repN. Replicated 1 times.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.111 | TNS=-0.175 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.066 | TNS=-0.084 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-81] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN. Replicated 1 times.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.058 | TNS=-0.070 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/d_pcl0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch_reg[3]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_pch[3]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_t[0]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_acr_reg_i_4_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add_reg[6]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add_reg[6]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add[6]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/addc. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_148_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_add[7]_i_148
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.047 | TNS=-0.048 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_n_0_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_ir_reg[4]_rep_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.038 | TNS=-0.038 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[0].
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.029 | TNS=-0.029 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_ir[7]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_97_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net nes/rp2a03_blk/cpu_blk/q_add[7]_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net nes/rp2a03_blk/cpu_blk/q_s[7]_i_39_n_0.  Re-placed instance nes/rp2a03_blk/cpu_blk/q_s[7]_i_39
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.025 | TNS=-0.025 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_ir[2]_repN_3. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_ir_reg[2]_replica_3.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.004 | TNS=-0.004 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[0]_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[0]_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.001 | TNS=-0.001 | WHS=0.049 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net nes/rp2a03_blk/cpu_blk/q_t_reg_n_0_[2]_repN. Clock skew was adjusted for instance nes/rp2a03_blk/cpu_blk/q_t_reg[2]_replica.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.017 | TNS=0.000 | WHS=0.049 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 162363939
+----- Checksum: : 11c91346d : 45a504cc 
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1800.562 ; gain = 24.004 ; free physical = 2094 ; free virtual = 8613
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1800.562 ; gain = 0.000 ; free physical = 2094 ; free virtual = 8613
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.017 | TNS=0.000 | WHS=0.049 | THS=0.000 |
+Ending Physical Synthesis Task | Checksum: 16498a9c3
+----- Checksum: : 11ef3a4f7 : 45a504cc 
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1800.562 ; gain = 24.004 ; free physical = 2094 ; free virtual = 8613
+INFO: [Common 17-83] Releasing license: Implementation
+588 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1800.562 ; gain = 24.016 ; free physical = 2094 ; free virtual = 8613
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.65 . Memory (MB): peak = 1800.562 ; gain = 0.000 ; free physical = 2090 ; free virtual = 8613
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 25 23:13:12 2015...
